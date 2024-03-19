@@ -10,12 +10,8 @@ import ListItemIcon from '@mui/material/ListItemIcon';
 import ListItemText from '@mui/material/ListItemText';
 import InboxIcon from '@mui/icons-material/MoveToInbox';
 import MailIcon from '@mui/icons-material/Mail';
-import Typography from '@mui/material/Typography';
-import Breadcrumbs from '@mui/material/Breadcrumbs';
-import Link from '@mui/material/Link';
-import { useState } from 'react';
 const drawerWidth = 240;
-export default function PermanentDrawerLeft({open}) {
+export default function PermanentDrawerLeft({ open }) {
   console.log(open);
   return (
     <>
@@ -64,16 +60,7 @@ export default function PermanentDrawerLeft({open}) {
             ))}
           </List>
         </Drawer>
-
       </Box>
-      <Breadcrumbs aria-label="breadcrumb" sx={{ marginLeft: 30 }}>
-        <Link underline="hover" color="inherit" href="/">
-          Home
-        </Link>
-        <Link underline="hover" href="/dashboard" color="text.primary">
-          dashboard
-        </Link>
-      </Breadcrumbs>
     </>
   );
 }

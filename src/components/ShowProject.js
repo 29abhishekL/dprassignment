@@ -1,7 +1,7 @@
 import { Box } from '@mui/material'
 import React from 'react'
 
-const ShowProject = ({ projectName, projectId,  }) => {
+const ShowProject = ({ projectName, projectId, }) => {
     const style = {
         position: 'absolute',
         top: '50%',

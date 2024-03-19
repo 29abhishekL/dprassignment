@@ -23,7 +23,7 @@ const Form = ({ onSubmit }) => {
     const [openn, setOpenn] = React.useState(false);
     const handleOpenn = () => setOpenn(true);
     const handleClosee = () => setOpenn(false);
-    
+
 
     const [open, setOpen] = React.useState(false);
     const handleOpen = () => setOpen(true);
@@ -61,16 +61,16 @@ const Form = ({ onSubmit }) => {
 
     const action = (
         <React.Fragment>
-          <IconButton
-            size="small"
-            aria-label="close"
-            color="inherit"
-            onClick={handleClosee}
-          >
-            <CloseIcon fontSize="small" />
-          </IconButton>
+            <IconButton
+                size="small"
+                aria-label="close"
+                color="inherit"
+                onClick={handleClosee}
+            >
+                <CloseIcon fontSize="small" />
+            </IconButton>
         </React.Fragment>
-      );
+    );
 
     return (
         <>
@@ -113,7 +113,6 @@ const Form = ({ onSubmit }) => {
                             fullWidth
                             size="large"
                             style={{ marginTop: '20px' }}
-                        // onClick={handleSubmit}
                         >
                             Submit
                         </Button>

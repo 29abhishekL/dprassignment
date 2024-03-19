@@ -4,6 +4,7 @@ import Header from './components/Header';
 import Form from './components/Form';
 import ShowProject from './components/ShowProject';
 import PermanentDrawerLeft from "./components/Drawer";
+import LandingPage from './components/LandingPage';
 import React, { useState } from 'react';
 import {
   BrowserRouter,
@@ -19,23 +20,17 @@ function App() {
   const toggleDrawer = () => {
     setOpen(!open);
   };
-  
+
   return (
     <>
-      {/* <Header/>
-      <PermanentDrawerLeft/>
-      <Form onSubmit={handleSubmit}/>
-      {projectDetails && (<ShowProject projectName={projectDetails.projectName} projectId={projectDetails.projectId}/>)} */}
-      
       <BrowserRouter>
-      <Header toggleDrawer={toggleDrawer}/>
-      <PermanentDrawerLeft open={open}/>
-      {/* <PermanentDrawerLeft open={open}/> */}
-      <Routes>
-      <Route path='/' element = {<Home/>}></Route>
-        {/* <Route path='/dashboard' element = {<PermanentDrawerLeft open={open}/>}></Route> */}
-       </Routes>   
-    </BrowserRouter>
+        <Header toggleDrawer={toggleDrawer} />
+        <PermanentDrawerLeft open={open} />
+        <Routes>
+          <Route path='/' element={<Home />}></Route>
+          <Route path='/Dashboard' element={<LandingPage />}></Route>
+        </Routes>
+      </BrowserRouter>
     </>
   );
 }
